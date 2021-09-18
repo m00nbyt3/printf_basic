@@ -6,7 +6,7 @@
 /*   By: ycarro <ycarro@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 10:59:34 by ycarro            #+#    #+#             */
-/*   Updated: 2021/09/13 11:18:38 by ycarro           ###   ########.fr       */
+/*   Updated: 2021/09/15 13:17:52 by ycarro           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ int	ft_printf(const char *str, ...)
 		else
 			ret += ft_putchar_mod(str[i]);
 	}
+	va_end(args);
 	return (ret);
 }
 
